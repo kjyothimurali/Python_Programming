@@ -48,7 +48,7 @@ unique_att=(set1|set2)|set3
 print(f"Total attendees on 3 days:{total_attendees(unique_att)}")
       
 comm_att=(set1&set2)&set3
-print(f"attendees on 3 days: {comm_att}")
+print(f"attendees on all 3 days: {comm_att}")
 
 att=unique_att-(set1&set2)-(set3&set2)-(set1&set3)
 print("attendees exactly on one day : ",att)
@@ -56,4 +56,5 @@ print("attendees exactly on one day : ",att)
 
 print("day1 and day2: ",(set1&set2))
 print("day2 and day3: ",(set2&set3))
+
 print("day1 and day3: ",(set1&set3))
